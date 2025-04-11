@@ -9,6 +9,7 @@ background-image:<iframe src="https://assets.pinterest.com/ext/embed.html?id=112
 
 h1{
     font-family: 'Autumn Flowers', cursive;
+    src: url('./fonts/AutumnFlowers-9YVZK.otf') format('opentype');
     font-size: 2.5rem;
     color: #6642b6;      
     text-align: center;

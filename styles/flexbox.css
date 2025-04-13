@@ -1,14 +1,39 @@
 .container {
-    border: 3px solid rgb(33, 18, 18);
+    border: 3px solid rgb(33, 18, 18); 
+    height: 90vh; /* gives the container more space and a height*/ 
     display: flex ;
     flex-direction: row;
-    justify-content: flex-end;     /*align along the main axis* so on the left or right of the top of the screen/
-    align-items: ;        /* align on the across/secondary axis*/
+    justify-content: flex-end;     /*align along the main axis* so on the left or right of the top of the screen*/
+    align-items: center;        /* align on the across/secondary axis*/
+    flex-wrap:wrap ;    /*stops flex from shrinking the values in the list if there are too many of them, the default value is wrap, this makes the objects wrap (form a line afer each other)*/ 
+    align-content: center ; /* aligns it beautifully*/ 
+    /* flex-basis: #;   /* sets the initial size of a flex item*/
+    /* flex-grow: /* sets the growth favour */
+    /* flex-shrink: shrink factor*/
+    /* flex:          /* shorthand property that combines basis, shrink and grow* (0,0,0), represented by 3 values, 1=grow, 2 = shrink, 3=value/ 
+    
 }
-
 .box{
     width: 5rem;
     height: 5rem;
     background: gold;
     margin: 1rem;
+    flex-basis: 15rem; /*set initial size of the boxes, overrites the width*/
+    flex-grow: 1;
+    flex: shrink 1; /* use if to fix the size of the boxes for when you move from a desktop to mobile display!!!!*/ 
+}
+
+
+/* to move the boxes with class # individualy, make a new rule*/
+.box1{
+    width: 5rem;
+    height: 5rem;
+    background: gold;
+    margin: 1rem;
+    flex-basis: 10rem;
+    align-self: center;  /* align-self= property assigned on flex item, NOT flex container. Can overwright align items property*/ 
+    flex-grow: 0;
+    flex-shrink: 0;
+
+
 }

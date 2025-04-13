@@ -1,0 +1,109 @@
+
+/* Practice:  h1 {
+    font-family: "Fira Sans Condensed", sans-serif;
+    font-weight: 900;
+    font-style: bold;
+    color: rgb(0, 13, 113); 
+background-image:<iframe src="https://assets.pinterest.com/ext/embed.html?id=11259067813204073" height="713" width="345" frameborder="0" scrolling="no" ></iframe> ;
+} */
+/* nav ul{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    list-style: none;
+    padding: 1 ;
+    margin:1rem 0 0; 
+
+} */
+nav {
+    background-color: #f6f3ef;
+    padding: 10px 0;
+    text-align: center;
+ }
+ /* Square Horizontal list  */
+.navbar {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px ;
+}
+
+.navbar li a {
+display: inline-block;
+text-decoration: none;
+background-color: #e0d6cc;
+padding: 15px 25px;
+border: rgb(113, 67, 20);
+box-shadow: 2px 2px 6px rgba(0,0,0,0.15);
+font-weight: 600;
+color: #333;
+transition: all 0.3s ease-in;
+}
+
+.navbar li a:hover{
+    color: #6a994e;
+    transform: scale(1.05);
+}
+
+
+ /* List colour
+nav li a {
+    text-decoration: solid;
+    font-weight: bold;
+    color: black;
+    transition: color 0.3s ease; 
+} 
+
+/* Now for background the image: door texture */
+/* nav {
+    background-image: url(#);
+    background-size: cover ;
+    background-position: center;} */
+
+
+
+/* Door knob shaped or styled nav buttons */
+/* nav ul{
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    list-style: none;
+    padding: 1rem;
+}
+
+nav a {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 60px;
+    background: radial-gradient(circle at 30% 30%, #d4af37, #8b6f24); /* gold look */
+   /* color: white;
+    font-weight: bold;
+    text-decoration: none;
+    box-shadow: inset -2px -2px 5px rgba(255,255,255,0.4),
+                inset 2px 2px 8px rgba(0,0,0,0.3),
+                0 4px 8px rgba(0,0,0,0.2);
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  nav a:hover {
+    transform: scale(1.1);
+    box-shadow: inset -1px -1px 2px rgba(255,255,255,0.6),
+                inset 2px 2px 5px rgba(0,0,0,0.4),
+                0 6px 12px rgba(0,0,0,0.3);
+  } */
+
+
+
+
+h1{
+    font-family: 'Autumn Flowers', cursive;
+    src: url('./fonts/AutumnFlowers-9YVZK.otf') format('opentype');
+    font-size: 2.5rem;
+    color: #6642b6;      
+    text-align: center;
+}

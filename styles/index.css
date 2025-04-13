@@ -6,6 +6,70 @@
     color: rgb(0, 13, 113); 
 background-image:<iframe src="https://assets.pinterest.com/ext/embed.html?id=11259067813204073" height="713" width="345" frameborder="0" scrolling="no" ></iframe> ;
 } */
+nav ul{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    list-style: none;
+    padding: 1 ;
+    margin:1rem 0 0; 
+
+}
+
+nav li a {
+    text-decoration: solid;
+    font-weight: bold;
+    color: black;
+    transition: color 0.3s ease; 
+}
+
+nav li a:hover{
+    color: #6a994e;
+}
+
+/* Now for background the image: door texture */
+nav {
+    background-image: url(#);
+    background-size: cover ;
+    background-position: center;
+
+}
+
+/* Door knob shaped or styled nav buttons */
+nav ul{
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    list-style: none;
+    padding: 1rem;
+}
+
+nav a {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 60px;
+    background: radial-gradient(circle at 30% 30%, #d4af37, #8b6f24); /* gold look */
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    box-shadow: inset -2px -2px 5px rgba(255,255,255,0.4),
+                inset 2px 2px 8px rgba(0,0,0,0.3),
+                0 4px 8px rgba(0,0,0,0.2);
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  nav a:hover {
+    transform: scale(1.1);
+    box-shadow: inset -1px -1px 2px rgba(255,255,255,0.6),
+                inset 2px 2px 5px rgba(0,0,0,0.4),
+                0 6px 12px rgba(0,0,0,0.3);
+  }
+
+  
+
 
 h1{
     font-family: 'Autumn Flowers', cursive;

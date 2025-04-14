@@ -1,129 +1,108 @@
-.header{
-    background-image: url("../Images/DarkPinkBanner.png");
-    background-size: cover; /* Make it fill the space yoh */
-    background-repeat: no-repeat; /* Prevent it from tiling again */
-    background-position: center; /* Center the image */
-    padding: 0; /* Remove padding that squishes the image */
-    margin: 0; 
-    color: aliceblue;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
 
+/* HEADER STYLING */
+.header {
+  background-image: url("../Images/DarkPinkBanner.png");
+  background-size: cover; /* Make it fill the space yoh */
+  background-repeat: no-repeat; /* Prevent it from tiling again */
+  background-position: center; /* Center the image */
+  margin: 0;
+  padding: 0;
+  color: aliceblue;
 }
 
+/* HEADER GRID */
+.header-grid {
+  display: grid;
+  grid-template-columns: 1fr auto; /* Title on left, nav on right */
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+  padding: 2rem;
+  gap: 3rem;
+  box-sizing: border-box;
+}
+
+/* TITLE STYLES */
 @font-face {
-    font-family: 'GreatVibes';
-    src: url('../Fonts/Great_Vibes/GreatVibes-Regular.ttf') format("truetype");
-    font-weight: normal;
-    font-style: normal;
-  }
-  
-  .header-grid {
-    display: grid;
-    grid-template-columns: 1fr auto; /* Big title on the left, nav on the right */
-    align-items: center;
-    padding: 2rem;
-    gap: 3rem;
-  }
-  
-  .title {
-    font-size: 6rem; /* hugggge, gorgeous heading */
-    font-family: 'GreatVibes', cursive;
-    margin: 0;
-    line-height: 1;
-    padding: 1rem 1rem ;
-    justify-content: center;
-  }
-
-  nav{
-    margin:0;  
-  }
-
-h1{
-    margin: 1rem 3rem;
-    font-family: 'GreatVibes', cursive;
-    /* font-size: 400em; /*this weight is font specific*/ 
-    /*letter-spacing: 1rem;
-    max-width: 600em;    /* for varying screen sizes, hopefully this is responsive*/
-    /* word-spacing: normal; */
+  font-family: 'GreatVibes';
+  src: url('../Fonts/Great_Vibes/GreatVibes-Regular.ttf') format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 
+.title {
+  font-size: 6rem; /* hugggge, gorgeous heading */
+  font-family: 'GreatVibes', cursive;
+  margin: 0;
+  line-height: 1;
+  padding: 1rem;
+}
+
+/* NAVIGATION */
+nav {
+  margin: 0;
+}
+
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 2rem;
+  justify-content: flex-end;
+}
+
+.navbar a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.navlinks {
+  color: aliceblue;
+  text-decoration: solid;
+}
+
+.navbar li a {
+  text-decoration: none;
+  font-family: 'Fira Sans Condensed', sans-serif;
+  color: #eeeeee;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.navbar li a:hover {
+  color: #f19cc8;
+}
+
+/* OTHER ELEMENTS */
 main {
   padding-top: 2rem;
 }
 
 body {
-    background-image: url("../Images/whiteswirl.jpg");
-    background-size: cover; 
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;   /*background stays fixed when users scroll, for now*/ 
+  background-image: url("../Images/whiteswirl.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
 }
 
-.navbar a {
-    text-decoration: none;
-    font-size: 1.2rem;
-    font-weight: bold;
-   
-  }
-
-.navlinks{
-    color: aliceblue;
-    text-decoration: solid;
+h1 {
+  margin: 1rem 3rem;
+  font-family: 'GreatVibes', cursive;
+  /* font-size: 400em; /*this weight is font specific*/ 
+  /*letter-spacing: 1rem;
+  max-width: 600em;    /* for varying screen sizes, hopefully this is responsive*/
+  /* word-spacing: normal; */
 }
 
-.navbar ul {
-    list-style: none;
-    padding: 2rem 0;
-    margin: 2rem;
-    display: flex;
-    gap: 2rem;
-    justify-content: end; 
-  }
-  
-  .navbar li a {
-    text-decoration: none;
-    font-family: 'Fira Sans Condensed', sans-serif;
-    color: #eeeeee; 
-    font-weight: 600;
-    transition: color 0.3s ease;
-    justify-content: end; 
-  }
-  
-  .navbar li a:hover {
-    color: #f19cc8; 
-}
+/* MEDIA QUERY — TEMP NOTE:
+   the following styling is to try to fix it without the text breaking when people use smaller phones/displays, 
+   otherwise, please ignore it. It's not active right now! */
 
-    .navbar ul {
-        justify-content: center;
-        flex-wrap: wrap;
-      }
-    
-      .title {
-        font-size: 3.5rem;
-      }
+/* BUTTON HOVER EFFECT */
 
-/*MEDIA QUERY: the following styling is to try to fix it without the text breaking when people use smaller phones/diplays,otherwise, please ignore it*/
-/* Existing header grid styles for larger screens */
-.header-grid {
-    display: grid;
-    grid-template-columns: 1fr auto;
-    align-items: center;
-    justify-content: center;
-    padding: 2rem;
-    gap: 3rem;
-  }
-  
-  .title {
-    font-size: 6rem; /* Large size for desktop */
-    font-family: 'GreatVibes', cursive;
-    text-align: center;
-    margin: 0;
-    line-height: 1;
-  }
   
   /* Media query for smaller screens (mobile/tablets) */
   /* @media (max-width: 768px) {

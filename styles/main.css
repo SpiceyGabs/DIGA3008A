@@ -1,8 +1,16 @@
-header{
+.header{
     background-image: url("../Images/DarkPinkBanner.png");
+    background-size: cover; /* Make it fill the space yoh */
+    background-repeat: no-repeat; /* Prevent it from tiling again */
+    background-position: center; /* Center the image */
+    padding: 0; /* Remove padding that squishes the image */
+    margin: 0; 
     color: aliceblue;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 
 }
 
@@ -43,6 +51,10 @@ h1{
     /* word-spacing: normal; */
 }
 
+main {
+  padding-top: 2rem;
+}
+
 body {
     background-image: url("../Images/whiteswirl.jpg");
     background-size: cover; 
@@ -55,7 +67,7 @@ body {
     text-decoration: none;
     font-size: 1.2rem;
     font-weight: bold;
-    color: #333; /* tweak this to match your theme */
+   
   }
 
 .navlinks{
@@ -78,6 +90,7 @@ body {
     color: #eeeeee; 
     font-weight: 600;
     transition: color 0.3s ease;
+    justify-content: end; 
   }
   
   .navbar li a:hover {

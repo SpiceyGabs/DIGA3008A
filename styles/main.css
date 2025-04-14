@@ -11,15 +11,3 @@ body {
     background-position: center;
     background-attachment: fixed;   /*background stays fixed when users scroll, for now*/ 
 }
-
-.container {
-    border: 2rem solid #fae1ed; 
-    height: 1vh; /* gives the container more space and a height*/ 
-    display: flex ;
-    flex-direction: row;
-    justify-content: flex-end;     /*align along the main axis* so on the left or right of the top of the screen*/
-    align-items: center;        /* align on the across/secondary axis*/
-    flex-wrap:wrap ;    /*stops flex from shrinking the values in the list if there are too many of them, the default value is wrap, this makes the objects wrap (form a line afer each other)*/ 
-    align-content: center; 
-    
-}

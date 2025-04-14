@@ -13,6 +13,23 @@ header{
     font-style: normal;
   }
   
+  .header-grid {
+    display: grid;
+    grid-template-columns: 1fr auto; /* Big title on the left, nav on the right */
+    align-items: center;
+    padding: 2rem;
+    gap: 3rem;
+  }
+  
+  .title {
+    font-size: 6rem; /* hugggge, gorgeous heading */
+    font-family: 'GreatVibes', cursive;
+    margin: 0;
+    line-height: 1;
+    padding: 1rem 1rem ;
+    justify-content: center;
+  }
+
   nav{
     margin:0;  
   }
@@ -20,10 +37,10 @@ header{
 h1{
     margin: 1rem 3rem;
     font-family: 'GreatVibes', cursive;
-    font-size: 400em; /*this weight is font specific*/ 
-    letter-spacing: 1rem;
+    /* font-size: 400em; /*this weight is font specific*/ 
+    /*letter-spacing: 1rem;
     max-width: 600em;    /* for varying screen sizes, hopefully this is responsive*/
-    word-spacing: normal;
+    /* word-spacing: normal; */
 }
 
 body {
@@ -33,6 +50,13 @@ body {
     background-position: center;
     background-attachment: fixed;   /*background stays fixed when users scroll, for now*/ 
 }
+
+.navbar a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333; /* tweak this to match your theme */
+  }
 
 .navlinks{
     color: aliceblue;
@@ -59,8 +83,53 @@ body {
   .navbar li a:hover {
     color: #f19cc8; 
 }
+
+    .navbar ul {
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+    
+      .title {
+        font-size: 3.5rem;
+      }
+
+/*MEDIA QUERY: the following styling is to try to fix it without the text breaking when people use smaller phones/diplays*/
+/* Existing header grid styles for larger screens */
+.header-grid {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    gap: 3rem;
+  }
   
-/* adding a single image to the whole background of the page*/
+  .title {
+    font-size: 6rem; /* Large size for desktop */
+    font-family: 'GreatVibes', cursive;
+    text-align: center;
+    margin: 0;
+    line-height: 1;
+  }
+  
+  /* Media query for smaller screens (mobile/tablets) */
+  @media (max-width: 768px) {
+    .header-grid {
+      grid-template-columns: 1fr;  /* Stack the content in one column */
+      text-align: center;          /* Center the text */
+      gap: 1.5rem;                 /* Add some space between header and nav */
+    }
+  
+    .title {
+      font-size: 4rem;             /* Make the title smaller for mobile */
+    }
+  
+    .navbar ul {
+      flex-direction: column;      /* Stack nav items vertically */
+      gap: 1rem;                   /* Space out the nav items */
+    }
+
+
 
 
 .backToTopBtn:hover {

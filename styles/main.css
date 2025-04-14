@@ -17,3 +17,8 @@ body {
     color: var(--webpage-bg);
     opacity: 1;  
 }
+
+.site-footer i {
+    color: #af4c92;            /*hot pink icons to match or rather contrast the site right now*/ 
+    margin-right: 0.5rem;
+  }

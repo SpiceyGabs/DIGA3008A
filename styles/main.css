@@ -20,6 +20,10 @@ header{
 h1{
     margin: 1rem 3rem;
     font-family: 'GreatVibes', cursive;
+    font-size: 400em; /*this weight is font specific*/ 
+    letter-spacing: 1rem;
+    max-width: 600em;    /* for varying screen sizes, hopefully this is responsive*/
+    word-spacing: normal;
 }
 
 body {

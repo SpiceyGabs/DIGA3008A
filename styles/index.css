@@ -1,11 +1,11 @@
 header{
-    background-image: url("/Images/whitebrickwall.jpg");
+    background-image: url("../Images/whitebrickwall.jpg");
     
 }
 
 /* adding a single image to the whole background of the page*/
 body {
-    background-image: url("/Images/whiteswirl.jpg");
+    background-image: url("../Images/whiteswirl.jpg");
     background-size: cover; 
     background-repeat: no-repeat;
     background-position: center;

@@ -11,3 +11,9 @@ body {
     background-position: center;
     background-attachment: fixed;   /*background stays fixed when users scroll, for now*/ 
 }
+
+.backToTopBtn:hover {
+    background: linear-gradient(30deg, var(--hover-colour) , var(--scrollbar-yellow));
+    color: var(--webpage-bg);
+    opacity: 1;  
+}

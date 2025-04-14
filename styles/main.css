@@ -1,6 +1,11 @@
 header{
-    background-image: url("/Images/whitebrickwall.jpg");
-    
+    background-image: url("../Images/DarkPinkBanner.png");
+    color: aliceblue;
+}
+
+.navlinks{
+    color: aliceblue;
+    text-decoration: solid;
 }
 
 /* adding a single image to the whole background of the page*/

@@ -3,7 +3,37 @@
 
 
 
-ul{
+
+.container {
+    outline: 2rem solid black;
+    height: 90vh; /* gives the container more space and a height*/ 
+    display: flex ;
+    flex-direction: row;
+    justify-content: flex-end;     /*align along the main axis* so on the left or right of the top of the screen*/
+    align-items: center;        /* align on the across/secondary axis*/
+    flex-wrap:wrap ;    /*stops flex from shrinking the values in the list if there are too many of them, the default value is wrap, this makes the objects wrap (form a line afer each other)*/ 
+    align-content: center
+ }
+
+ .box{
+    width: 5rem;
+    height: 5rem;
+    background: gold;
+    margin: 1rem;
+    flex-basis: 15rem; /*set initial size of the boxes, overrites the width*/
+    flex-grow: 1;
+    flex: shrink 1; /* use if to fix the size of the boxes for when you move from a desktop to mobile display!!!!*/ 
+}
+
+
+.blogs-ul li a {
     list-style-type: none; /*removes the ugly ahh bullets omg*/
     padding-left: 0; /*no more default indentation*/ 
+    text-decoration: none;
+    color: black;
+    transition: color 0.3s ease; /*a nice little animation you know what i meaaaannnnnn*/ 
+}
+
+.blogs-ul  li a:hover {
+    color: #096209;  /*Yup, hover colour, I like the details*/
 }

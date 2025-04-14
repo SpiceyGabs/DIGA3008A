@@ -130,7 +130,22 @@ h1 {
     opacity: 1;  
 }
 
-.site-footer i {
-    color: #af4c92;            /*hot pink icons to match or rather contrast the site right now*/ 
-    margin-right: 0.5rem;
+/* .site-footer i {
+    color: #af4c92;            /*hot pink icons to match or rather contrast the site that arent working right now, how lovely*/ 
+    /*margin-right: 0.5rem;
+  } */
+
+  .site-footer {
+    background-color: #a49689; /* Solid brown background */
+    padding: 2rem; 
+    color: white; /* white to stand out on the brown background */
+    text-align: center;
+  }
+  
+  .site-footer a {
+    color: white; /* Ensures links are white as well */
+  }
+  
+  .site-footer a:hover {
+    color: #6c3521; /* Change hover color if you want */
   }

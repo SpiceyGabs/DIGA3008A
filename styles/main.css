@@ -6,12 +6,20 @@ header{
 
 }
 
+@font-face {
+    font-family: 'GreatVibes';
+    src: url('../Fonts/Great_Vibes/GreatVibes-Regular.ttf') format("truetype");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  nav{
+    margin:0;  
+  }
+
 h1{
     margin: 1rem 3rem;
-}
-
-nav{
-    margin:0;
+    font-family: 'GreatVibes', cursive;
 }
 
 body {

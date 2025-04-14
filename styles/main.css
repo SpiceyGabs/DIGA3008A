@@ -119,15 +119,15 @@ body {
       /*text-align: center;  }        /* Center the text */
       /*gap: 1.5rem;                 /* Add some space between header and nav */
     */
-  
+/*   
     .title {
       font-size: 4rem;             /* Make the title smaller for mobile */
-    }
+    /*}
   
     .navbar ul {
       flex-direction: column;      /* Stack nav items vertically */
-      gap: 1rem;                   /* Space out the nav items */
-    }
+      /* gap: 1rem;   }                /* Space out the nav items */
+     
 
 
 

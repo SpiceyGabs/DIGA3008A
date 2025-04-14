@@ -1,6 +1,25 @@
 header{
     background-image: url("../Images/DarkPinkBanner.png");
     color: aliceblue;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+h1{
+    margin: 1rem 3rem;
+}
+
+nav{
+    margin:0;
+}
+
+body {
+    background-image: url("../Images/whiteswirl.jpg");
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;   /*background stays fixed when users scroll, for now*/ 
 }
 
 .navlinks{
@@ -8,14 +27,29 @@ header{
     text-decoration: solid;
 }
 
-/* adding a single image to the whole background of the page*/
-body {
-    background-image: url("/Images/whiteswirl.jpg");
-    background-size: cover; 
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;   /*background stays fixed when users scroll, for now*/ 
+.navbar ul {
+    list-style: none;
+    padding: 2rem 0;
+    margin: 2rem;
+    display: flex;
+    gap: 2rem;
+    justify-content: end; 
+  }
+  
+  .navbar li a {
+    text-decoration: none;
+    font-family: 'Fira Sans Condensed', sans-serif;
+    color: #eeeeee; 
+    font-weight: 600;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar li a:hover {
+    color: #f19cc8; 
 }
+  
+/* adding a single image to the whole background of the page*/
+
 
 .backToTopBtn:hover {
     background: linear-gradient(30deg, var(--hover-colour) , var(--scrollbar-yellow));

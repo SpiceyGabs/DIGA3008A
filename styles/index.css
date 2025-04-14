@@ -23,3 +23,34 @@ body {
     align-content: center; 
     
 }
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    padding: 2rem;
+    align-items: start;
+  }
+  
+  .about-img img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 1rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  }
+  
+  .about-text {
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+  
+  @media (max-width: 768px) {          /* Allows for responsiveness on big and small screens yaayyayaya */ 
+    .about-grid {
+      grid-template-columns: 1fr;
+    }
+
+  
+    .about-img, .about-text {
+      text-align: center;
+    }
+  }

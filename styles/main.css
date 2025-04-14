@@ -93,7 +93,7 @@ body {
         font-size: 3.5rem;
       }
 
-/*MEDIA QUERY: the following styling is to try to fix it without the text breaking when people use smaller phones/diplays*/
+/*MEDIA QUERY: the following styling is to try to fix it without the text breaking when people use smaller phones/diplays,otherwise, please ignore it*/
 /* Existing header grid styles for larger screens */
 .header-grid {
     display: grid;
@@ -113,12 +113,12 @@ body {
   }
   
   /* Media query for smaller screens (mobile/tablets) */
-  @media (max-width: 768px) {
+  /* @media (max-width: 768px) {
     .header-grid {
       grid-template-columns: 1fr;  /* Stack the content in one column */
-      text-align: center;          /* Center the text */
-      gap: 1.5rem;                 /* Add some space between header and nav */
-    }
+      /*text-align: center;  }        /* Center the text */
+      /*gap: 1.5rem;                 /* Add some space between header and nav */
+    */
   
     .title {
       font-size: 4rem;             /* Make the title smaller for mobile */

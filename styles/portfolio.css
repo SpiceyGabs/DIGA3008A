@@ -1,0 +1,28 @@
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    justify-content: center;
+  }
+  
+  .video-box {
+    position: relative;
+    overflow: hidden;
+    border-radius: 1rem;
+    transition: transform 0.3s ease, filter 0.3s ease;
+  }
+  
+  .video-box img {
+    width: 100%;
+    display: block;
+    border-radius: 1rem;
+  }
+  
+  .video-box:hover {
+    transform: scale(1.03);
+  }
+  
+  .video-grid:hover .video-box:not(:hover) {
+    filter: blur(3px);
+  }
+  

@@ -110,6 +110,21 @@ h3{
   font-family:"TheSillyFont" ;
   font-size: 1rem;
 }
+
+.u url{
+  font-family:"PlayfairDisplay";
+  font-size: 1.5rem ;
+  font-weight: 400rem;
+  min-width: auto;
+}
+
+li{
+  font-family:"PlayfairDisplay";
+  font-size: 1.5rem ;
+  font-weight: 400rem;
+  min-width: auto;
+}
+
 /* NAVIGATION */
 nav {
   margin: 0;

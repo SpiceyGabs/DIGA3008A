@@ -1,0 +1,9 @@
+
+
+
+
+
+ul{
+    list-style-type: none; /*removes the ugly ahh bullets omg*/
+    padding-left: 0; /*no more default indentation*/ 
+}

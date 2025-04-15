@@ -1,7 +1,8 @@
 
 /* HEADER STYLING */
 .header {
-  background-image: url("../Images/DarkPinkBanner.png");
+  /* background-image: url("../Images/DarkPinkBanner.png"); */
+  background-color: #ac88a2;    /*New site banner/ header colour
   background-size: cover; /* Make it fill the space yoh */
   background-repeat: no-repeat; /* Prevent it from tiling again */
   background-position: center; /* Center the image */

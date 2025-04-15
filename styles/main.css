@@ -216,6 +216,7 @@ h1 {
     background: linear-gradient(30deg, var(--hover-colour) , var(--scrollbar-yellow));
     color: var(--webpage-bg);
     opacity: 1;  
+    align-items: end;
 }
 
 /* .site-footer i {

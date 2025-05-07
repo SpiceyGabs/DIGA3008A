@@ -26,14 +26,8 @@
   box-sizing: border-box;
 }
 
-nav{                         /* still trying to fill the width of the screen here, lol*/ 
- width: 100%;
- padding: 0px;
- /*background: #f19cc8;*/
- position: dynamic;
- height: 70px; 
 
-}
+
 /* TEXT & TITLE STYLES */
 @font-face {
   font-family: 'GreatVibes';

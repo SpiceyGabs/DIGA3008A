@@ -10,6 +10,7 @@
   padding: 0;
   width: 100%;
   top: 0px; 
+  color: #eeeeee;
 
 }
 
@@ -25,6 +26,14 @@
   box-sizing: border-box;
 }
 
+nav{                         /* still trying to fill the width of the screen here, lol*/ 
+ width: 100%;
+ padding: 30px 0px;
+ background: #f19cc8;
+ position: fixed;
+ height: 70px; 
+
+}
 /* TEXT & TITLE STYLES */
 @font-face {
   font-family: 'GreatVibes';

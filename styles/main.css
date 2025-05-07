@@ -8,7 +8,9 @@
   background-position: center; /* Center the image */
   margin: 0;
   padding: 0;
-  color: aliceblue;
+  width: 100%;
+  top: 0px; 
+
 }
 
 /* HEADER GRID */

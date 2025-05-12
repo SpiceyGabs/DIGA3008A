@@ -1,0 +1,25 @@
+logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.25rem;
+    font-weight: bold;
+    color: #3E3E3E; /* or Coyote/Almond from your palette */
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 1.5rem;
+    background-color: #f7f5f2; /* maybe Isabelline or Whitesmoke */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease-in-out;
+    display: inline-block;
+  }
+  
+  .logo:hover {
+    background-color: #e4ddd4; /* a little depth */
+    transform: scale(1.03);
+  }
+
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+  }

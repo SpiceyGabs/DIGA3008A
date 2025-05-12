@@ -1,19 +1,19 @@
 logo {
-    font-family: 'Playfair Display', serif;
+    /*font-family: 'Playfair Display', serif;*/ 
     font-size: 2.25rem;
     font-weight: bold;
-    color: #3E3E3E; /* or Coyote/Almond from your palette */
+    color: #ffffff; 
     text-decoration: none;
-    padding: 0.5rem 1rem;
-    border-radius: 1.5rem;
-    background-color: #f7f5f2; /* maybe Isabelline or Whitesmoke */
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-    transition: all 0.3s ease-in-out;
+    padding: 0rem; 
+   /* border-radius: 1.5rem;*/ 
+    background-color: #000000; /* maybe Isabelline or Whitesmoke */
+    box-shadow: 0 4px 12px rgba(27, 57, 102, 0.825);
+    transition: all 0.3s ease-in-out;  /* For animation later*/ 
     display: inline-block;
   }
   
   .logo:hover {
-    background-color: #e4ddd4; /* a little depth */
+    background-color: #69dcff; /* a little depth */
     transform: scale(1.03);
   }
 
@@ -47,7 +47,7 @@ logo {
   .navbar li a {
     text-decoration: none;
     font-family: 'Fira Sans Condensed', sans-serif;
-    color: #000000;
+    color: #fffdfd;
     font-weight: 600;
     transition: color 0.3s ease;
   }
@@ -55,3 +55,59 @@ logo {
   .navbar li a:hover {
     color: #6a52f3;
   }
+
+  /*FONT FAMILIES??*/
+
+
+  /* CARDDSSS */
+  section {
+    background-color: rgb(20, 16, 72);
+    padding: 1rem;
+    margin: 1rem auto;
+    border-radius: 1.25rem; /* round and soft */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 1190px;
+  }
+  
+  body {
+    background-color: #000000;
+    text-indent: 2rem ;
+    padding-top: 5rem; /*space between nav and body*/ 
+  }
+  
+  p {
+    color: #fdfbed;  
+    padding: 1px;
+   
+  }
+
+  h1{
+    color: #fdfbed;  
+  }
+
+  h2{
+    color: #fdfbed;  
+  }
+
+  h3{
+    color: #fdfbed;  
+  }
+
+  h4{
+    color: #b5d1bf;
+  }
+
+  footer li a:hover {
+     color: #8dc376;
+  }
+
+  footer ul{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        gap: 2rem;
+        justify-content: middle;
+        color: #fdfbed;
+      }
+

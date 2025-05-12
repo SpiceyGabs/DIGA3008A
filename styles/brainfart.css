@@ -23,3 +23,35 @@ logo {
     justify-content: space-between;
     padding: 1rem 2rem;
   }
+
+  .navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 2rem;
+    justify-content: flex-end;
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .navlinks {
+    color: rgb(244, 244, 244);
+    text-decoration: solid;
+  }
+  
+  .navbar li a {
+    text-decoration: none;
+    font-family: 'Fira Sans Condensed', sans-serif;
+    color: #000000;
+    font-weight: 600;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar li a:hover {
+    color: #6a52f3;
+  }

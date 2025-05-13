@@ -1,24 +1,30 @@
 
+ body {
+  image-resolution: 2048px ;
+  background-size: cover;
+  background-image: url("../Images/AestheticWallpaper1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment:fixed;
+}
+ section {
+  background-color: rgba(255, 255, 255, 0.6); /* 0.6 is a 60% dark overlay */
+  color: rgb(0, 0, 0);
+  padding: 2rem;
+  border-radius: 1rem;
+  margin: 2rem auto;
+  max-width: 1000px;
+
+}
 
 
 
 
-
-.container {
-    outline: 2rem solid black;
-    height: 90vh; /* gives the container more space and a height*/ 
-    display: flex ;
-    flex-direction: row;
-    justify-content: flex-end;     /*align along the main axis* so on the left or right of the top of the screen*/
-    align-items: center;        /* align on the across/secondary axis*/
-    flex-wrap:wrap ;    /*stops flex from shrinking the values in the list if there are too many of them, the default value is wrap, this makes the objects wrap (form a line afer each other)*/ 
-    align-content: center
- }
 
  .box{
     width: 5rem;
     height: 5rem;
-    background: gold;
+    background: rgba(255, 217, 0, 0);
     margin: 1rem;
     flex-basis: 15rem; /*set initial size of the boxes, overrites the width*/
     flex-grow: 1;
@@ -30,10 +36,22 @@
     list-style-type: none; /*removes the ugly ahh bullets omg*/
     padding-left: 0; /*no more default indentation*/ 
     text-decoration: none;
-    color: black;
+    color: rgba(0, 0, 0, 0);
     transition: color 0.3s ease; /*a nice little animation you know what i meaaaannnnnn*/ 
 }
 
 .blogs-ul  li a:hover {
-    color: #096209;  /*Yup, hover colour, I like the details*/
+    color: #09620900;  /*Yup, hover colour, I like the details*/
 }
+
+/*(
+.container {
+    outline: 2rem solid black;
+    height: 90vh; /*gives the container more space and a height
+    display: flex ;
+    flex-direction: row;
+    justify-content: flex-end;     /*align along the main axis* so on the left or right of the top of the screen
+    align-items: center;        /* align on the across/secondary axis
+    flex-wrap:wrap ;    /*stops flex from shrinking the values in the list if there are too many of them, the default value is wrap, this makes the objects wrap (form a line afer each other) 
+    align-content: center
+ }*/

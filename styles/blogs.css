@@ -25,6 +25,7 @@ logo {
   }
  .navbar{
   position:sticky;
+  justify-content: flex-end;
   padding-left: 2rem;
  }
   .navbar ul {
@@ -73,11 +74,11 @@ logo {
   /* CARDDSSS */
   /*Section 1: with round borders: */ 
   section {
-    background-color: rgb(20, 16, 72);
+    background-color: rgba(32, 29, 79, 0.711);
     padding: 1rem;
     margin: 1rem auto;
     border-radius: 1.25rem; 
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.509);
     max-width: 1190px;
   }
   

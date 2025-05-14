@@ -62,7 +62,7 @@ logo {
   body {
   image-resolution: 2048px ;
   background-size: cover;
-  background-image: url("../Images/DarkAfricanPatternBackground.jpg");
+  background-image: url("../Images/AestheticWallpaper1.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-attachment:fixed;
@@ -81,6 +81,12 @@ logo {
     max-width: 1190px;
   }
   
+  .section-introText {
+    background-color: rgb(20, 16, 72);
+    padding: 1rem;
+    margin: 1rem auto;
+    border-radius: 1.25rem; 
+  }
 
   /* Section 2*/
  /* section {

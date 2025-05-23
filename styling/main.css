@@ -37,7 +37,7 @@
 }
 
 .navLink {
-  color: rgba(3, 3, 74, 0.91);
+  color:#04254f;
   text-decoration: none;
   font-weight: 600;
   font-size: 1rem;
@@ -46,10 +46,9 @@
   transition: box-shadow 0.3s ease, background-color 0.3s ease;
 }
 
-.navLink:hover,
-.navLink.active {
-  box-shadow: 0 0 10px rgba(0, 153, 255, 0.8);
-  background-color: rgba(0, 153, 255, 0.1);
+.navLink:hover,.navLink.active {
+  box-shadow: 0 0 10px #f7f5f4;
+  background-color: #04254f;
 }
 
 /*MEDIA QUERIES*/

@@ -166,10 +166,47 @@
   }
 }
 
+.indexBody, html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    background-image: url("../Images/Background1.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #07003c;
+}
+
+.pageWrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
 
 
+/*Buttons that are round*/
+.bottomButtons {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 2rem;
+}
 
+.roundButton {
+  padding: 1rem 2rem;
+  border: 2px solid #2f4156;
+  background-color: rgb(255, 255, 255);
+  border-radius: 50px;
+  text-decoration: none;
+  color: #003366;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
 
+.roundButton:hover {
+  background-color: #2f4156;
+  color: white;
+}
 
 
 

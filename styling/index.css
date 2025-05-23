@@ -6,7 +6,7 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    color: #04254f;
+    color: #4b874b;
 }
 
 
@@ -19,11 +19,13 @@
 /* Intro Banner */
 .introBanner {
   height: 100vh;
-  background-color: rgba(2, 2, 65, 0.91);
+  background-color: rgba(2, 2, 65, 0);
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
+  background-image: url(../Images/Welcome_Screen.jpg);
+  background-size: 1000px;
 }
 
 .bannerTitle {

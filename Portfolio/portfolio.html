@@ -11,6 +11,9 @@
  <link rel="stylesheet" href="../styling/main.css">
   <link rel="stylesheet" href="../styling/portfolio.css">
     
+  <!-- js -->
+   <script src="../scripts/navActive.js" defer></script>
+   <script src="../scripts/portfolio.js" defer></script>
   </head>
 
   
@@ -42,10 +45,38 @@
         </nav>
       </div>
     </header>
+
 <main>
   <div class="pageWrapper">
-    <h2> Portfolio page</h2>
-    <h3>Welcome!</h3>
+    <section class="portfolioGallery">
+    <h2>My Portfolio</h2>
+
+    <div class="portfolioFilters">
+      <button class="filterButton activeFilter" data-category="all">All</button>
+      <button class="filterButton" data-category="video">Video Projects</button>
+      <button class="filterButton" data-category="art">Art & Illustration</button>
+    </div>
+
+    <div class="carouselWrapper">
+    <button class="carouselArrow leftArrow">&#8592;</button>
+<!-- 
+    <div class="carouselTrack" id="portfolioCarouselTrack">
+      <div class="portfolioCard" data-category="ui">
+        <h3>Video Essay 1</h3>
+        <p class="portfolioExcerpt"> </p>
+        <button class="roundButton" data-role="readMore">Read More</button>
+      </div> -->
+
+       <div class="portfolioCard" data-category="video">
+        <h3>Video Essay 1</h3>
+        <video controls class="portfolioVideo">
+          <source src="https://drive.google.com/file/d/1Y2hssxuQXHTJFv29_qxb-wdRtUYCb2FE/view?usp=drive_link target=" type="video/mp4">
+        </video>
+        <p class="portfolioExcerpt">A group project edited in Capcut, discusses Wes Andersons film "The Swam" with regards to art and reimagining how modern adaptations of media can hold more value than the originals.</p>
+      </div>
+
+
+<!-- 
     <section class="videoSection">
       <h2>Videos</h2>
       <p class="videoIntro">
@@ -61,7 +92,7 @@
             alt="Video preview 1: The Swan video analysis as it relates to the singular value of art"
             width="450"
             height="300"></a>
-           <p> About this video:</p>
+           <p> About this video:</p> -->
 
         <a class="videoBox" href="https://drive.google.com/file/d/1MHEH0FMhKOSPB5xdvuZEXiLe_iaHy2iC/view?usp=drive_link">
             <img src="../Images/MachineLearningPreview.png"

@@ -1,11 +1,14 @@
 
 // This will apply the .active class to the correct link based on current URL
-window.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', () => {
   const navLinks = document.querySelectorAll('.navLink');
+
   const currentPage = window.location.pathname.split('/').pop();
 
   navLinks.forEach(link => {
-    if (link.getAttribute('href') === currentPage) {
+    const linkPage = link.getAttribute('href').split('/').pop();
+
+    if (linkPage === currentPage) {
       link.classList.add('active');
     }
   });

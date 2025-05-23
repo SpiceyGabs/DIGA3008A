@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const designButtons = document.querySelectorAll('.designCard .readMoreBtn');
+  document.querySelectorAll('.designCard .roundButton[data-role="readMore"]')
 
   designButtons.forEach(button => {
     button.addEventListener('click', () => {

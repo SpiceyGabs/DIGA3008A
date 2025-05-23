@@ -1,13 +1,16 @@
 
 //DOM manipulation for the "read more" of the carousels
 document.addEventListener('DOMContentLoaded', () => {
-  const blogButtons = document.querySelectorAll('.blogCard .readMoreBtn');
+  const readMoreButtons = document.querySelectorAll('.blogCard .roundButton[data-role="readMore"]');
 
-  blogButtons.forEach(button => {
-    button.addEventListener('click', () => {
+  readMoreButtons.forEach(button => {
+    button.addEventListener('click', (event) => {
+      event.preventDefault(); // Prevent jump if using <a>
       const excerpt = button.previousElementSibling;
 
-      if (excerpt.style.maxHeight !== 'none') {
+      const isExpanded = excerpt.classList.toggle('isExpanded');
+
+      if (isExpanded) {
         excerpt.style.maxHeight = 'none';
         excerpt.style.overflow = 'visible';
         button.textContent = 'Show Less';

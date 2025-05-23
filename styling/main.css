@@ -46,7 +46,8 @@
   transition: box-shadow 0.3s ease, background-color 0.3s ease;
 }
 
-.navLink:hover,.navLink.active {
+.navLink:hover,
+.navLink.active {
   box-shadow: 0 0 10px rgba(0, 153, 255, 0.8);
   background-color: rgba(0, 153, 255, 0.1);
 }
@@ -64,7 +65,7 @@
     gap: 1rem;
   }
 
-  .aboutGrid, .skillsLanguagesGrid {
+  .aboutGrid,.skillsLanguagesGrid {
     grid-template-columns: 1fr;
   }
 

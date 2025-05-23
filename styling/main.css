@@ -125,6 +125,56 @@
   transform: rotate(-45deg) translateY(-8px);
 }
 
+/* HAMBURGER ACTIVE (X ICON) */
+.hamburgerBtn.active .topBar {
+  transform: rotate(45deg) translateY(8px);
+}
+.hamburgerBtn.active .middleBar {
+  opacity: 0;
+}
+.hamburgerBtn.active .bottomBar {
+  transform: rotate(-45deg) translateY(-8px);
+}
+
+/* MOBILE DROPDOWN MENU */
+.mobileDropdown {
+  display: none;
+  background-color: #ffffff;
+  border-top: 2px solid #ccc;
+  width: 100%;
+  position: absolute;
+  top: 80px;
+  left: 0;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  z-index: 1000;
+}
+
+.mobileDropdown.open {
+  display: block;
+}
+
+.dropdownNavList {
+  list-style: none;
+  margin: 0;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.dropdownNavList a {
+  text-decoration: none;
+  color: rgba(2, 2, 65, 0.91);
+  font-weight: bold;
+  padding: 0.5rem;
+  border-radius: 6px;
+}
+
+.dropdownNavList a:hover {
+  background-color: #059cf9;
+  color: white;
+}
+
 /* OVERLAY NAV MENU */
 .mobileOverlay {
   position: fixed;
@@ -168,10 +218,11 @@
 /* For phones */
 @media screen and (max-width: 768px) {
   .hamburgerBtn {
-    display: flex;
-    margin-left: auto;
-    right: 1rem;
-    top: 1.5rem;
+      display: flex;
+    /* margin-left: auto; */
+      position: absolute;
+      right: 1rem;
+      top: 1.5rem;
   }
 
   .navList {
@@ -179,14 +230,14 @@
   }
 }
 
+  .mobileDropdown {
+    display: none;
+  }
+
 
   .mobileOverlay {
     display: flex; /* show overlay nav */
   }
-
-
-
-
 
 .indexBody, html, body {
     margin: 0;

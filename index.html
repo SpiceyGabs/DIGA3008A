@@ -1,61 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Homepage</title>
-  <script src="index.js"></script> 
-  <meta name="author" content="Sisanda Gabela">
-  <meta name="keywords" content="Digital Arts Student Portfolio, Sisanda Gabela, Wits, Wits University digital arts, coding project, suite sg, suite sg homepage, suite sg academics, suite sg blogs, suite sg essays, suite sg portfolio, suite sg design, html css beginner projects, interactive media showcase, web development student work, UX design, Homey Web portfolio, creative growth journey">
-
-  <script src="https://kit.fontawesome.com/sgsquared.2@gmail.com.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="styles/main.css">
-  <link rel="stylesheet" href="styles/index.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width, initial-scale=1.0">
+    <meta name="author" content="Sisanda Gabela">
+    <title>Coding practice Index page</title>
+    <!-- Styling -->
+    <link rel="stylesheet" href="./styling/main.css">
+    <link rel="stylesheet" href="index.css">
+    
 </head>
 
-<body>
-  <header class="header">
-    <div class="header-grid">
-      <h1 class="title">Suite SG</h1>
-      <nav class="navbar">
-        <ul>
-          <li><a class="navlinks" href="index.html">Home</a></li>
-          <li><a class="navlinks" href="BLOGS/BlogsHomepage.html">Blogs</a></li>
-          <li><a class="navlinks" href="Portfolio/portfolio.html">Portfolio</a></li>
-          <li><a class="navlinks" href="Design/Design.html">Design</a></li>
-          <li><a class="navlinks" href="Brainfart/brainfart.html">Other</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+<body class="indexBody">
+    
+    <header class="mainHeader" id="mainHeader">
+        <nav>
+            <ul> 
+                <li><a class="navlinks" href="index.html">Home</a></li>
+                <li><a class="navlinks" href="Blogs/BlogsHomepage.html">Blogs</a></li>
+                <li><a class="navlinks" href="Portfolio/portfolio.html">Portfolio</a></li>
+                <li><a class="navlinks" href="Design/Design.html">Design</a></li>
+            </ul> 
+        </nav>
+    </header>
 
-  <main>
-    <section class="intro">
+    <div class="pageWrapper">     <!--EVERything  insie the body needs a divider for the sticky footer to Work -->
+    <!-- <div class="introBanner" id="introBanner">
+            <h1>Welcome to my website</h1>
+            <button id="nextBtn">Next</button>
+    </div> -->
+
+
+ <!-- <section class="homepageLinks">
+        <nav class="navbar" role="navigation" aria-label="Main"> list of links to main website locations -->
+                <!-- <ul> -->
+                <!-- <li><a class="navlinks" href="index.html">Home</a></li>
+                <li><a class="navlinks" href="Blogs/BlogsHomepage.html">Blogs</a></li>
+                <li><a class="navlinks" href="Portfolio/portfolio.html">Portfolio</a></li>
+                <li><a class="navlinks" href="Design/Design.html">Design</a></li>
+                </ul>
+        </nav>  --> 
+       
+    <!-- </section> 
+        <img src="./Images/Welcome_Screen.jpg" 
+        alt="blue and white background with flowers in the forebground and text in the centre that reads_welcome" ># </a>
+    </section> -->
+    
+<main>
+<section class="aboutPage" id="aboutPage">
       <h2>Welcome to my Home...page</h2>
-      <p>
-        A curated space for digital expression, creative exploration, and thoughtful design.
-        Step inside and explore stories, visuals, and ideas that reflect a student's mind at work and a home built on creativity,
-        and tailored with intention.
-        <br>
-        Here you’ll find my weekly blog posts, class explorations, and creative updates as this
+      <p>This is a curated space for digital expression, creative exploration, and thoughtful design.
+        Step inside and explore text, visuals, and ideas that reflect a student's mind at work through creativity,
+        and tailored with intention.</p>
+        
+        <p>Here you’ll find my weekly blog posts, class explorations, and creative updates as this
         space continues to grow and evolve. Take your time, explore, and enjoy the journey. Get in touch if you’d like to collaborate,
         chat about design, or are curious about the person behind the screen.
       </p>
-    </section>
+</section>
 
-    <section class="about-grid">
+    <section class="aboutGrid">
       <div class="about-img">
-        <img src="Images/AboutSectionSelfie.jpg"
+        <img src="./Images/AboutSectionSelfie.jpg"
              alt="A golden hour selfie of Sisanda Gabela"
-             height="600" width="520" />
-        
-        <p>
+             height="550" 
+             width="480">
       </div>
 
-      <div class="about-text">
+      <div class="aboutMeText" id="aboutMeText">
 
         <h2>Hi! I'm Sisanda Gabela</h2>
 
@@ -74,47 +86,23 @@
           </p>
       </div>
     </section>
-  </main>
+</main>
 
-  <footer class="site-footer">
+    <footer>
     <section class="contact">
-      <h3>Get in Touch!</h3>
-      <ul class="h-card">
-        <li><a href="mailto:2496473@students.wits.ac.za"><i class="fas fa-envelope"></i> Email</a></li>
-        <li><a href="https://www.linkedin.com/in/sisanda-g-96047a289/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
-        <li><a href="https://github.com/SpiceyGabs?tab=repositories" target="_blank"><i class="fab fa-github"></i> GitHub</a></li>
-      </ul>
+        <p class="contact">Get in touch!</p>
+        <nav id="footer-nav" aria-label="contact">  <!-- list of links to main contact locations -->
+            <ul class="h-card">
+            <li><a href="mailto:2496473@students.wits.ac.za"> <img src="./Images/email-heart.png" alt="Email icon" width="50"></a></li>
+            <li><a href="https://www.linkedin.com/in/sisanda-g-96047a289/" target="_blank"></a> <img src="./Images/linkedin (1).png" alt="LinkedIn icon" width="52"></li>
+            <li><a href="https://github.com/SpiceyGabs?tab=repositories" target="_blank"> <img src="./Images/github (1).png" alt="Github icon" width="50
+                "></a></li>
+        </ul>
+        </nav>
     </section>
-
-    <p class="copyright">&copy; Sisanda Gabela for Wits Digital Arts, 2025.</p>
-  </footer>
+        <p class="copyright">&copy; Sisanda Gabela for Wits Digital Arts, 2025.</p>
+    </footer>
+    </div>
 </body>
 </html>
 
-
-<!-- <nav>
-    <ul>
-        <li>
-            <a href ="index.html"> Homepage</a>
-        </li>
-        <li>
-            <a href = "BLOGS/"> Blogposts</a>
-        </li>
-        <li>
-            <a href ="Design/"> Design</a>
-        </li>
-        <li>
-            <a href="Essays/"> Essays </a>   
-        </li>
-        <li>
-            <a href ="Portfolio/"> Portfolio </a>
-        </li>
-        <li>
-            <a href ="Brainfart/"> Other </a>
-        </li>
-        
-    </ul>
-</nav>
-
-Sisanda Gabela for Wits, 2025
- -->

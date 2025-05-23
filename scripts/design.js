@@ -1,9 +1,7 @@
-
-//DOM manipulation for the "read more" of the carousels
 document.addEventListener('DOMContentLoaded', () => {
-  const blogButtons = document.querySelectorAll('.blogCard .readMoreBtn');
+  const designButtons = document.querySelectorAll('.designCard .readMoreBtn');
 
-  blogButtons.forEach(button => {
+  designButtons.forEach(button => {
     button.addEventListener('click', () => {
       const excerpt = button.previousElementSibling;
 

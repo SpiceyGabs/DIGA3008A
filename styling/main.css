@@ -37,7 +37,7 @@
 }
 
 .navLink {
-  color: rgba(2, 2, 65, 0.91);
+  color: rgba(3, 3, 74, 0.91);
   text-decoration: none;
   font-weight: 600;
   font-size: 1rem;
@@ -104,12 +104,12 @@ nav {
 .navbar ul {
     display: flex;
     justify-content: center; /* center horizontally */
-    gap: 2rem;
+    /*gap: 2rem;
     list-style: none;
     padding: 1rem 0;
     margin: 0;
     border-bottom: 2.4px solid #ccc; /* underline separator */
-}
+
 
 /* Welcome screen  */
 .welcomeScreen{

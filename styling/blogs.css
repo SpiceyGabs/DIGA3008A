@@ -12,6 +12,43 @@
     color: #2f4156;
 }
 
+.blogCarousel {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 2rem;
+  padding: 2rem;
+  margin-top: 1rem;
+}
+
+.blogCard {
+  flex: 0 0 300px;
+  background-color: #f7f5f4;
+  color: #04254f;
+  padding: 1.5rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  scroll-snap-align: start;
+  position: relative;
+  overflow: hidden;
+}
+
+.blogExcerpt {
+  max-height: 120px;
+  overflow: hidden;
+  position: relative;
+}
+
+.blogExcerpt::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 3rem;
+  width: 100%;
+  background: linear-gradient(to bottom, rgba(247,245,244,0), #f7f5f4);
+}
+
 /* .blogs-ul,.essays-ul {
      list-style: none;
     padding-left: 0;
@@ -41,13 +78,13 @@
 }  */
 
 /*UM... Main layout: side-by-side */
-.container {
+/* .container {
   display: flex;
   min-height: 100vh;
-}
+} */
 
 /* Sidebar: top left, smaller */
-.sidebar {
+/* .sidebar {
   width: 200px;
   padding: 1rem;
   background: #f7f7f7;
@@ -58,18 +95,18 @@
   height: 100vh;
   overflow-y: auto;
   box-shadow: 2px 0 5px rgba(0,0,0,0.1);
-}
+} */
 
 /* Space for loaded content beside sidebar */
-.blog-display {
+/* .blog-display {
   margin-left: 200px;
   padding: 2rem;
   flex: 1;
   background-color: #fff;
-}
+} */
 
 /* Blog links */
-.blogs-ul li a,
+/* .blogs-ul li a,
 .essays-ul li a {
   display: block;
   margin-bottom: 0.5rem;
@@ -80,4 +117,4 @@
 
 .blogs-ul li a:hover {
   text-decoration: underline;
-}
+} */

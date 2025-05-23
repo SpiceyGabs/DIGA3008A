@@ -79,6 +79,93 @@
   }
 }
 
+/*Hamburger*/
+.hamburgerBtn {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 24px;
+  width: 30px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 1001;
+}
+
+.bar {
+  height: 3px;
+  width: 100%;
+  background-color: #04254f;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+}
+
+/*TOGGLE */
+.hamburgerBtn.active .topBar {
+  transform: rotate(45deg) translateY(8px);
+}
+
+.hamburgerBtn.active .middleBar {
+  opacity: 0;
+}
+
+.hamburgerBtn.active .bottomBar {
+  transform: rotate(-45deg) translateY(-8px);
+}
+
+/* OVERLAY NAV MENU */
+.mobileOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(2, 2, 65, 0.96);
+  transform: translateX(-100%);
+  transition: transform 0.4s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.mobileOverlay.open {
+  transform: translateX(0);
+}
+
+.overlayNavList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  text-align: center;
+}
+
+.overlayNavLink {
+  color: beige;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.overlayNavLink:hover {
+  color: #00bfff;
+}
+
+/* For phones */
+@media screen and (max-width: 768px) {
+  .hamburgerBtn {
+    display: flex;
+    margin-left: auto;
+  }
+
+  .navList {
+    display: none;
+  }
+}
+
 
 
 

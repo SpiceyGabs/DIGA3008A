@@ -1,7 +1,96 @@
 .indexBody, html {
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
+    font-family: 'Inter', sans-serif;
+    background-image: url("../Images/Background1.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #04254f;
+}
+
+
+.pageWrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Intro Banner */
+.introBanner {
+  height: 100vh;
+  background-color: rgba(2, 2, 65, 0.91);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.bannerTitle {
+  font-size: 3rem;
+  color: beige;
+}
+
+/*About*/ 
+.aboutGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  padding: 3rem;
+}
+
+.aboutImg img {
+  width: 100%;
+  height: auto;
+  border-radius: 1rem;
+}
+
+.aboutText {
+  font-size: 1rem;
+}
+
+/*Skills and languages*/
+.skillsLanguagesGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  padding: 2rem 3rem;
+}
+
+.skillsBox, .languagesBox {
+  background-color: #f7f5f4;
+  border-radius: 1rem;
+  padding: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.languageList {
+  list-style: none;
+  padding-left: 1rem;
+}
+
+/*Buttons that are round*/
+.bottomButtons {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 2rem;
+}
+
+.roundButton {
+  padding: 1rem 2rem;
+  border: 2px solid #059cf9;
+  background-color: beige;
+  border-radius: 50px;
+  text-decoration: none;
+  color: #003366;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.roundButton:hover {
+  background-color: #059cf9;
+  color: white;
 }
 
 /* 
@@ -26,8 +115,8 @@
     animation: fadeIn 1.6s forwards;
 } */
 
- #nextBtn {                    /*I must admit, I fixed this and the keyframes using AI, sorry */
-margin-top: 1rem;
+/* #nextBtn {                    /*I must admit, I fixed this and the keyframes using AI, sorry */
+/* margin-top: 1rem;
 padding: 0.7rem 1.5rem;
 font-size: 1rem;
 cursor: pointer;
@@ -39,11 +128,10 @@ animation: fadeIn 2s 1.5s forwards;
   to {
     opacity: 1;
   }
-}
-
+} */
 
 /*This hides nav at first */
-.mainHeader {
+/* .mainHeader {
     margin-top: 100vh;
     padding: 1rem;
     background: white;
@@ -55,4 +143,4 @@ animation: fadeIn 2s 1.5s forwards;
   padding: 2rem;
   background: #f4f4f4;
   min-height: 100vh;
-}
+} */

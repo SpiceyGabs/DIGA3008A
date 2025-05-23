@@ -49,7 +49,13 @@
   background: linear-gradient(to bottom, rgba(247,245,244,0), #f7f5f4);
 }
 
-.essayCarouselSection {
+.blogCard:hover {
+ transition: 1.2s ease ease-out ;
+ transition: box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+/*Was unresponsive*/
+/* .essayCarouselSection {
   padding: 2rem;
 }
 
@@ -87,7 +93,7 @@
   height: 3rem;
   width: 100%;
   background: linear-gradient(to bottom, rgba(247,245,244,0), #f7f5f4);
-}
+} */
 
 .readMoreBtn {
   margin-top: 1rem;
